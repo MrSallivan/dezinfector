@@ -60,21 +60,30 @@
 	}
 }
 %btn {
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding: 15px 20px;
+	font-family: $secondFont;
+	font-size: 1.4rem;
 	font-weight: bold;
 	background: linear-gradient(180deg, $mainColor 0%, #f57b0b 166.25%);
 	border-radius: 15px;
 	cursor: pointer;
 	user-select: none;
+	touch-action: manipulation;
 	text-decoration: none;
 	color: $textColor;
+	outline: none;
+	border: none;
 
-	&:hover{
-		background: linear-gradient(180deg, $mainColor -82.95%, #F57B0B 76.69%);
-		color:$secTextColor;
+	&:hover {
+		background: linear-gradient(180deg, $mainColor -82.95%, #f57b0b 76.69%);
+		color: $secTextColor;
+	}
+	&:active {
+		background: linear-gradient(180deg, $mainColor -82.95%, #f57b0b 76.69%);
+		color: $secTextColor;
 	}
 }

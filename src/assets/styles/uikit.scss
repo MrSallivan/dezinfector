@@ -1,30 +1,30 @@
-@import './utils';
-@import './components';
-@import './layout';
+@import "./utils";
+@import "./components";
+@import "./layout";
 
-.wrap{
+.wrap {
 	max-width: 1920px;
 }
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
 }
-.ui__title{
+.ui__title {
 	font-size: 2rem;
 	margin-bottom: 1rem;
 	margin-top: 2re;
 	text-decoration: underline;
 }
-.h1{
+.h1 {
 	@include h1();
 }
-.h2{
+.h2 {
 	@include h2();
 }
-.h3{
+.h3 {
 	@include h3();
 }
-.h4{
+.h4 {
 	@include h4();
 }
 .btn {
