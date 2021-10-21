@@ -5,7 +5,15 @@ $secondFont: "RobotoSlab";
 
 //COLORS
 $mainColor: #F5DE0B;
-$secondRed: #FF0000;
-$thirdOrange: #F57E0B;
-$fourthBlack: #000000;
-$fifthWhite: #ffffff;
+$secondColor: #FF0000;
+$thirdColor: #F57E0B;
+
+$textColor: #000000;
+$secTextColor: #ffffff;
+
+$bgColorOne: #ffffff;
+$bgColorTwo: #ffffff;
+
+//SCREENS
+$tablet: 'min-width: 768px';
+$desktop: 'min-width: 1280px';
