@@ -59,7 +59,30 @@
 		line-height: 27px;
 	}
 }
-@mixin service($width: 288px, $colorTop: $mainColor, $colorBottom: #f9f9f9) {
+@mixin p($color: $textColor, $font: $mainFont) {
+	font-size: 1.4rem;
+	line-height: 150%;
+	font-weight: 400;
+	color: $color;
+	font-family: $font;
+	margin-bottom: 1.5rem;
+	@media ($tablet) {
+		font-size: 1.8rem;
+	}
+}
+
+@mixin service($width: 288px, $bg: #f9f9f9, $br: 10px 10px 0 0) {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: $width;
+	border-radius: $br;
+	background-color: $bg;
+	overflow: hidden;
+	margin-bottom: 2rem;
+	@media ($tablet) {
+		max-width: 290px;
+	}
 }
 
 %btn {

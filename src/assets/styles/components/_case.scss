@@ -1,0 +1,26 @@
+.case {
+	@include service($br: 15px 15px 0 0, $bg: transparent);
+	// .case__top
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 10px 10px 20px;
+		background-color: #000;
+	}
+	// .case__title
+	&__title {
+		@include h3();
+		color: #fff;
+		font-family: $mainFont;
+	}
+	// .case__bottom
+	&__bottom {
+	}
+	// .case__list-item
+	&__text {
+		@include p();
+		padding-top: 1rem;
+		text-align:left;
+	}
+}

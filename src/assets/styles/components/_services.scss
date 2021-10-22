@@ -1,0 +1,35 @@
+.service {
+	@include service();
+	// .service__top
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 1rem;
+		background-color: $mainColor;
+
+		@media ($desktop) {
+			padding: 20px 40px 20px 20px;
+		}
+	}
+	// .service__title
+	&__title {
+		@include h3();
+		font-family: $mainFont;
+	}
+	// .service__image
+	&__image {
+	}
+	// .service__bottom
+	&__bottom {
+		padding: 10px 10px 0 10px;
+	}
+	// .service__list
+	&__list {
+		list-style: none;
+	}
+	// .service__list-item
+	&__list-item {
+		@include p();
+	}
+}
