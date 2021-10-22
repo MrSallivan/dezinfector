@@ -12,7 +12,7 @@
 .ui__title {
 	font-size: 2rem;
 	margin-bottom: 1rem;
-	margin-top: 2re;
+	margin-top: 2rem;
 	text-decoration: underline;
 }
 .h1 {
@@ -29,4 +29,7 @@
 }
 .btn {
 	@extend %btn;
+}
+.service {
+	@extend service();
 }

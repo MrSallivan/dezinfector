@@ -1,0 +1,50 @@
+.advantage {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	height: 52px;
+	max-width: 136px;
+	background: #ffffff;
+	box-shadow: 0px 46px 80px rgba(0, 0, 0, 0.07), 0px 19.2177px 33.4221px rgba(0, 0, 0, 0.0503198),
+		0px 10.2747px 17.869px rgba(0, 0, 0, 0.0417275), 0px 5.75991px 10.0172px rgba(0, 0, 0, 0.035),
+		0px 3.05905px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 1.27294px 2.21381px rgba(0, 0, 0, 0.0196802);
+	border-radius: 10px;
+	@media ($tablet) {
+		max-width: 200px;
+		min-height: 70px;
+		padding: 15px 20px;
+	}
+	@media ($desktop) {
+		max-width: 250px;
+		min-height: 90px;
+		padding: 15px 20px;
+	}
+	&__image {
+		display: block;
+		max-width: 40px;
+		max-height: 40px;
+
+		@media ($desktop) {
+			max-width: 60px;
+			max-height: 60px;
+		}
+	}
+	&__text {
+		font-family: $mainFont;
+		font-size: 14px;
+		line-height: 150%;
+		margin: 0 0 0 5px;
+
+		@media ($tablet) {
+			font-size: 2rem;
+			line-height: 28px;
+		}
+		@media ($desktop) {
+			font-size: 2.4rem;
+			line-height: 28px;
+			margin: 0 0 0 20px;
+		}
+	}
+}

@@ -4,9 +4,9 @@ $mainFont: "Raleway";
 $secondFont: "RobotoSlab";
 
 //COLORS
-$mainColor: #F5DE0B;
-$secondColor: #FF0000;
-$thirdColor: #F57E0B;
+$mainColor: #f5de0b;
+$secondColor: #ff0000;
+$thirdColor: #f57e0b;
 
 $textColor: #000000;
 $secTextColor: #ffffff;
@@ -15,5 +15,10 @@ $bgColorOne: #ffffff;
 $bgColorTwo: #ffffff;
 
 //SCREENS
-$tablet: 'min-width: 768px';
-$desktop: 'min-width: 1280px';
+$tablet: "min-width: 768px";
+$desktop: "min-width: 1280px";
+
+//WIDTHS
+$maxwidth: 1920px;
+$minwidth: 320px;
+$maxwidthContainer: 1280px;
