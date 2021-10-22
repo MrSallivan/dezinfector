@@ -36,7 +36,7 @@
 	text-align: $align;
 
 	@media ($tablet) {
-		font-size: 2.2rem;
+		font-size: 2.4rem;
 	}
 	@media ($desktop) {
 		font-size: 2.4rem;
@@ -83,6 +83,14 @@
 	@media ($tablet) {
 		max-width: 290px;
 	}
+}
+@mixin coast() {
+	border-radius:15px;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
 %btn {

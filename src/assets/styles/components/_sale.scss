@@ -1,0 +1,21 @@
+.sale {
+	width: 100%;
+	max-width: 288px;
+	height: 37px;
+	background: $mainColor;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	font-size: 14px;
+	line-height: 120%;
+	font-family: $mainFont;
+	font-weight: bold;
+	@media ($tablet) {
+		display: inline;
+		font-size: 18px;
+		height: 42px;
+	}
+}
