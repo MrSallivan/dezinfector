@@ -1,0 +1,10 @@
+.check {
+	list-style: url('../../images/icons/check.png');;
+		// .check__item
+		&__item {
+			@include p();
+			position: relative;
+
+			
+		}
+}
