@@ -1,7 +1,7 @@
 .coast {
 	@include coast();
 	height: 37px;
-	
+
 	@media ($tablet) {
 		display: inline-flex;
 		flex-direction: column;
@@ -31,11 +31,16 @@
 		background-color: #e9f1f3;
 		width: 100%;
 		flex-basis: 50%;
-		
 
 		@media ($tablet) {
 			font-weight: bold;
 			padding: 20px 0;
+		}
+	}
+
+	&_nm {
+		@media ($tablet) {
+			margin-right: 0;
 		}
 	}
 }
