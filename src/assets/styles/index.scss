@@ -1,7 +1,10 @@
-@import './utils';
-@import './components';
-@import './layout';
+@import "./utils";
+@import "./components";
+@import "./layout";
 
-.body{
-	max-width: 1920px;
+.container {
+	width: 100%;
+	min-width: 320px;
+	max-width: 1310px;
+	margin: 0 auto;
 }

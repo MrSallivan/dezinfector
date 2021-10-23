@@ -38,7 +38,7 @@
 		}
 	}
 
-	&_nm {
+	&:last-child {
 		@media ($tablet) {
 			margin-right: 0;
 		}
