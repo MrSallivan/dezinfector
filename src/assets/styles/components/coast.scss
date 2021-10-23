@@ -1,25 +1,41 @@
 .coast {
 	@include coast();
-		// .coast__top
-		&__top {
-			@include h3();
-			font-size: 14px;
-			background-color: $mainColor;
-			
-			@media ($tablet) {
-				padding: 10px 20px;
-			}
+	height: 37px;
+	
+	@media ($tablet) {
+		display: inline-flex;
+		flex-direction: column;
+		border-radius: 15px;
+		margin-right: 10px;
+		height: auto;
+	}
+	// .coast__top
+	&__top {
+		@include h3($align: center);
+		font-size: 14px;
+		font-family: $mainFont;
+		line-height: 37px;
+		background-color: $mainColor;
+		flex-basis: 50%;
+
+		@media ($tablet) {
+			padding: 10px 20px;
+			line-height: 21px;
 		}
-		// .coast__bottom
-		&__bottom {
-			@include h4($align: center);
-			font-weight: normal;
-			background-color: #E9F1F3;
-			width: 100%;
-			
-			@media ($tablet) {
-				font-weight: bold;
-				padding: 20px 0;
-			}
+	}
+	// .coast__bottom
+	&__bottom {
+		@include h4($align: center);
+		font-weight: normal;
+		font-family: $mainFont;
+		background-color: #e9f1f3;
+		width: 100%;
+		flex-basis: 50%;
+		
+
+		@media ($tablet) {
+			font-weight: bold;
+			padding: 20px 0;
 		}
+	}
 }

@@ -33,3 +33,13 @@
 .btn {
 	@extend %btn;
 }
+.coasts {
+	background-color: #e9f1f3;
+	border-radius: 10px;
+	overflow: hidden;
+	
+	@media ($tablet) {
+		background-color: transparent;
+	}
+}
+
