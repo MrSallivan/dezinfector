@@ -10,6 +10,22 @@
 	}
 	// .header__menu
 	&__menu {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		position: fixed;
+		padding: 30px 16px 0 0;
+		top: 0;
+		right: -100%;
+		width: 241px;
+		border-radius: 10px 0 0 10px;
+		overflow: hidden;
+		background-color: $mainColor;
+		transition: all 0.3s ease 0s;
+		
+		&.active {
+			right: 0;
+		}
 	}
 }
 .header-logo {
@@ -34,40 +50,85 @@
 	}
 }
 .header-menu {
-	display: none;
+	order: 3;
 	// .header-menu__items
 	&__items {
 	}
 	// .header-menu__item
 	&__item {
+		@include p();
+		text-align: right;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	// .header-menu__link
 	&__link {
+		@include linkreset();
 	}
 	// .header-menu__socials
 	&__socials {
 	}
 }
+
 .socials {
+	margin: 25px 0 30px 0;
+	// .socials__link
+	&__link {
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	// .socials__img
+	&__img {
+	}
 }
-.socials-item {
-}
+
 .header-features {
-	display: none;
+	margin: 30px 0;
+	order: 2;
+	font-size: 1.4rem;
+	line-height: 120%;
+	color: $textColor;
+	text-align: right;
+	font-family: $mainFont;
+	font-weight: bold;
+	margin-bottom: 25px;
+
 	// .header-features__location
 	&__location {
+		@include linkreset();
+		display: block;
+		cursor: pointer;
+		margin-bottom: 10px;
+
+		&::before {
+			content: url("../images/icons/arrow.png");
+			top: 0;
+			left: 0;
+			width: 10px;
+			max-height: 10px;
+			margin-right: 5px;
+		}
 	}
 	// .header-features__tel
 	&__tel {
+		@include linkreset();
 	}
 }
+
 .header-burger {
 	display: block;
-	position: relative;
+	position: absolute;
+	top: 33px;
+	right: 16px;
 	width: 30px;
 	height: 16px;
 	cursor: pointer;
-
+	order: 0;
+	z-index: 3;
 	span,
 	&:after,
 	&:before {
@@ -86,8 +147,26 @@
 	&:after {
 		top: 0;
 	}
+
 	&:before {
 		bottom: 0;
+	}
+	span {
+		top: 7px;
+	}
+
+	&.active {
+		span {
+			display: none;
+		}
+	}
+	&.active::before {
+		transform: rotate(45deg);
+		bottom: 7px;
+	}
+	&.active::after {
+		transform: rotate(-45deg);
+		top: 7px;
 	}
 
 	@media ($tablet) {
