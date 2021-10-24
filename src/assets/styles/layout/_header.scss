@@ -7,7 +7,7 @@
 	background-color: $mainColor;
 
 	@media ($tablet) {
-		padding: 15px 16px 0px;
+		padding: 15px 16px 15px;
 		max-height: 125px;
 	}
 	// .header__logo
@@ -55,7 +55,7 @@
 	justify-content: space-between;
 	align-items: center;
 
-	@media($tablet){
+	@media ($tablet) {
 		margin-right: 143px;
 	}
 	// .header-logo__link
@@ -78,6 +78,9 @@
 		font-size: 14px;
 		line-height: 120%;
 
+		@media (max-width: 425px) and (min-width: 375px) {
+			padding-right: 80px;
+		}
 		@media ($tablet) {
 			font-weight: bold;
 			font-size: 18px;
@@ -111,8 +114,8 @@
 		text-align: right;
 		margin-bottom: 10px;
 
-		&:last-child{
-			@media($tablet){
+		&:last-child {
+			@media ($tablet) {
 				margin-right: 0;
 			}
 		}
@@ -131,7 +134,7 @@
 	&__link {
 		@include linkreset();
 
-		@media($tablet){
+		@media ($tablet) {
 			@include h4();
 			font-family: $mainFont;
 		}
@@ -169,9 +172,10 @@
 	font-weight: bold;
 	margin-bottom: 25px;
 
-	@media($tablet){
+	@media ($tablet) {
 		min-width: 237px;
 		padding: 0;
+		margin: 0 0 15px 20px;
 	}
 
 	// .header-features__location
@@ -189,10 +193,23 @@
 			max-height: 10px;
 			margin-right: 5px;
 		}
+		@media ($tablet) {
+			font-size: 18px;
+			font-family: $mainFont;
+			font-weight: 700;
+			line-height: 21.6px;
+		}
 	}
 	// .header-features__tel
 	&__tel {
 		@include linkreset();
+
+		@media ($tablet) {
+			font-size: 18px;
+			font-family: $mainFont;
+			font-weight: 700;
+			line-height: 21.6px;
+		}
 	}
 }
 
