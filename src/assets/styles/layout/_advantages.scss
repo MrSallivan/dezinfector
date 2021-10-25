@@ -6,6 +6,11 @@
 		height: 80px;
 		font-size: 18px;
 	}
+	@media (max-width: 1023.9px) and (min-width: 768px) {
+		width: 50%;
+		height: 70px;
+		font-size: 16px;
+	}
 }
 
 .advantages {
@@ -15,17 +20,43 @@
 		// align-items: center;
 		margin-top: 80px;
 	}
+	@media (max-width: 1279.9px) and (min-width: 1100px) {
+		align-items: center;
+		margin-top: 60px;
+	}
+	@media (max-width: 1100px) and (min-width: 1024px) {
+		margin-top: 45px;
+	}
+	@media (max-width: 1024px) and (min-width: 767.9px) {
+		margin-top: 30px;
+	}
 
 	// .advantages__content
 	&__content {
 		@media ($desktop) {
 			flex: 0 1 850px;
 		}
+		@media (max-width: 1279.9px) and (min-width: 1024px) {
+			flex: 0 1 600px;
+		}
+		@media (max-width: 1100px) and (min-width: 768px) {
+			flex: 0 1 1100px;
+			background: url(../images/mp.png) 100% 0 / contain no-repeat;
+		}
 	}
 	// .advantages__image
 	&__image {
+		display: none;
 		@media ($desktop) {
 			flex: 0 0 430px;
+			display: block;
+		}
+		@media (max-width: 1279.9px) and (min-width: 1024px) {
+			flex: 0 1 600px;
+			display: block;
+		}
+		@media (max-width: 1100px) and (min-width: 768px) {
+			display: none;
 		}
 	}
 }
@@ -38,10 +69,25 @@
 			max-width: 750px;
 			margin-bottom: 60px;
 		}
+		@media (max-width: 1279.9px) and (min-width: 1024px) {
+			max-width: 750px;
+			margin-bottom: 60px;
+			font-size: 50px;
+		}
+		@media (max-width: 1024px) and (min-width: 768px) {
+			max-width: 750px;
+			margin-bottom: 30px;
+			font-size: 40px;
+		}
 	}
 	// .advantages-content__items
 	&__items {
 		@media ($desktop) {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+		}
+		@media ($tablet) {
 			display: flex;
 			flex-wrap: wrap;
 			margin-bottom: 30px;
@@ -52,9 +98,22 @@
 		@media ($desktop) {
 			margin: 0 30px 30px 0;
 		}
+		@media (max-width: 1279.9px) and (min-width: 1024px) {
+			margin: 0 15px 15px 0;
+		}
+		@media (max-width: 1023.9px) and (min-width: 768px) {
+			margin: 0 15px 15px 0;
+		}
+
 		&:nth-child(3) {
 			@media ($desktop) {
 				margin: 0 0px 30px 0;
+			}
+			@media (max-width: 1279.9px) and (min-width: 1024px) {
+				margin: 0 15px 15px 0;
+			}
+			@media (max-width: 1023.9px) and (min-width: 768px) {
+				margin: 0 15px 15px 0;
 			}
 		}
 	}
