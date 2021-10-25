@@ -99,6 +99,12 @@
 	font-size: inherit;
 }
 
+@mixin wrap(){
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
 %btn {
 	display: inline-flex;
 	flex-direction: row;
