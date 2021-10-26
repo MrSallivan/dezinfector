@@ -11,6 +11,9 @@ section {
 }
 .wrap_white {
 	@include wrap();
+	&-service{
+		background: url(../images/serv.png) center/cover no-repeat;
+	}
 }
 .caption {
 	@include h1();
