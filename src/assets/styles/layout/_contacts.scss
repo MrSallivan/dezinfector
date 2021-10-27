@@ -1,22 +1,19 @@
 .contacts {
-
-	@media($desktop){
-			margin-bottom: 80px;
-		}
+	@media ($desktop) {
+		margin-bottom: 80px;
+	}
 	// .contacts__content
 	&__content {
-		@media($tablet){
-			
-		}
+		display: flex;
+		flex-direction: column-reverse;
 
-		@media($desktop){
+		@media ($desktop) {
 			display: flex;
 			position: relative;
 		}
 	}
 	// .contacts__discription
 	&__discription {
-		
 	}
 	// .contacts__caption
 	&__caption {
@@ -26,7 +23,7 @@
 	&__texts {
 		@include h4();
 
-		@media($desktop){
+		@media ($desktop) {
 			width: 491px;
 			margin-top: 30px;
 			margin-bottom: 15px;
@@ -34,11 +31,12 @@
 	}
 	// .contacts__btn
 	&__btn {
-		@media($desktop){
-			width: 491px;
-			
+		@media ($tablet) {
+			width: 100%;
 		}
-		
+		@media ($desktop) {
+			width: 491px;
+		}
 	}
 	// .contacts__position
 	&__position {
@@ -48,7 +46,7 @@
 			@include linkreset();
 		}
 
-		@media($desktop){
+		@media ($desktop) {
 			position: absolute;
 			bottom: 0;
 			left: 510px;
@@ -56,11 +54,16 @@
 	}
 	// .contacts__foto
 	&__foto {
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
 	}
 	// .contacts__purchases
 	&__purchases {
+		margin-top: 30px;
 
-		@media($desktop) {
+		@media ($desktop) {
 			margin-top: 60px;
 		}
 		a {
@@ -76,9 +79,15 @@
 	// .purchases__text
 	&__text {
 		@include h4();
-
-		@media($desktop) {
+		margin-top: 10px;
+		
+		@media ($desktop) {
 			margin-top: 30px;
 		}
+	}
+}
+.btn_cont{
+	@media (max-width: 1023.9px) and (min-width: 768px) {
+		width: 100%;
 	}
 }
