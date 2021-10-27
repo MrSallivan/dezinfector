@@ -1,14 +1,17 @@
 .contacts {
+	margin-bottom: 40px;
+
 	@media ($desktop) {
 		margin-bottom: 80px;
 	}
 	// .contacts__content
 	&__content {
-		display: flex;
-		flex-direction: column-reverse;
+		// display: flex;
+		// flex-direction: column-reverse;
 
 		@media ($desktop) {
 			display: flex;
+			flex-direction: row;
 			position: relative;
 		}
 	}
@@ -18,11 +21,22 @@
 	// .contacts__caption
 	&__caption {
 		@include h2();
+		margin-bottom: 15px;
+
+		@media (min-width: 768px) and(max-width:1023px) {
+			text-align: center;
+		}
+		@media ($desktop) {
+			margin-bottom: 0;
+		}
 	}
 	// .contacts__texts
 	&__texts {
 		@include h4();
-
+		margin-top: 15px;
+		@media (min-width: 768px) and(max-width:1023px) {
+			text-align: center;
+		}
 		@media ($desktop) {
 			width: 491px;
 			margin-top: 30px;
@@ -41,22 +55,39 @@
 	// .contacts__position
 	&__position {
 		@include h4();
+		margin-top: 15px;
 
 		a {
 			@include linkreset();
 		}
-
+		@media (min-width: 768px) and(max-width:1023px) {
+			text-align: center;
+		}
 		@media ($desktop) {
 			position: absolute;
 			bottom: 0;
 			left: 510px;
+			margin-top: 0;
 		}
 	}
 	// .contacts__foto
 	&__foto {
+		align-self: center;
+
+		@media ($desktop) {
+			align-self: auto;
+		}
 		img {
 			width: 100%;
 			object-fit: cover;
+			@media (min-width: 768px) and(max-width:1023px) {
+				width: 65%;
+				margin: 0 auto;
+				display: block;
+			}
+			@media ($desktop) {
+				width: auto;
+			}
 		}
 	}
 	// .contacts__purchases
@@ -75,18 +106,23 @@
 	// .purchases__caption
 	&__caption {
 		@include h2();
+		@media (min-width: 768px) and(max-width:1023px) {
+			text-align: center;
+		}
 	}
 	// .purchases__text
 	&__text {
 		@include h4();
 		margin-top: 10px;
-		
+		@media (min-width: 768px) and(max-width:1023px) {
+			text-align: center;
+		}
 		@media ($desktop) {
 			margin-top: 30px;
 		}
 	}
 }
-.btn_cont{
+.btn_cont {
 	@media (max-width: 1023.9px) and (min-width: 768px) {
 		width: 100%;
 	}
