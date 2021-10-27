@@ -1,0 +1,84 @@
+.contacts {
+
+	@media($desktop){
+			margin-bottom: 80px;
+		}
+	// .contacts__content
+	&__content {
+		@media($tablet){
+			
+		}
+
+		@media($desktop){
+			display: flex;
+			position: relative;
+		}
+	}
+	// .contacts__discription
+	&__discription {
+		
+	}
+	// .contacts__caption
+	&__caption {
+		@include h2();
+	}
+	// .contacts__texts
+	&__texts {
+		@include h4();
+
+		@media($desktop){
+			width: 491px;
+			margin-top: 30px;
+			margin-bottom: 15px;
+		}
+	}
+	// .contacts__btn
+	&__btn {
+		@media($desktop){
+			width: 491px;
+			
+		}
+		
+	}
+	// .contacts__position
+	&__position {
+		@include h4();
+
+		a {
+			@include linkreset();
+		}
+
+		@media($desktop){
+			position: absolute;
+			bottom: 0;
+			left: 510px;
+		}
+	}
+	// .contacts__foto
+	&__foto {
+	}
+	// .contacts__purchases
+	&__purchases {
+
+		@media($desktop) {
+			margin-top: 60px;
+		}
+		a {
+			@include linkreset();
+		}
+	}
+}
+.purchases {
+	// .purchases__caption
+	&__caption {
+		@include h2();
+	}
+	// .purchases__text
+	&__text {
+		@include h4();
+
+		@media($desktop) {
+			margin-top: 30px;
+		}
+	}
+}
