@@ -19,6 +19,13 @@ section {
 			background: none;
 		}
 	}
+	&-case{
+		background: url(../images/case_pic.png) center/cover no-repeat;
+
+		@media(min-width: 320px) and (max-width:768px){
+			background: none;
+		}
+	}
 }
 .caption {
 	@include h1();

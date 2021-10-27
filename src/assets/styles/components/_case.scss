@@ -1,4 +1,7 @@
 .case {
+	@media($desktop){
+		
+	}
 	@include service($br: 15px 15px 0 0, $bg: transparent);
 	// .case__top
 	&__top {
