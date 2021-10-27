@@ -1,0 +1,150 @@
+.prices {
+	// .prices__human
+	&__human {
+		margin-bottom: 40px;
+	}
+	// .prices__caption
+	&__caption {
+		@include h2();
+		margin-bottom: 10px;
+	}
+	// .prices__organisation
+	&__organisation {
+		@include h2();
+		margin-bottom: 10px;
+	}
+	// .prices__options
+	&__options {
+		margin-top: 10px;
+		@media($tablet){
+			margin-top: 35px;
+		}
+	}
+
+	&__sales {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@media($tablet){
+			flex-direction: row;
+			justify-content: start;
+		}
+	}
+	// .prices__sales-text
+	&__sales-text {
+		@include h4($align: left);
+		font-family: $mainFont;
+		margin: 20px 30px 10px 0;
+		flex: 1 1 25;
+	}
+}
+.coasts {
+	background-color: #e9f1f3;
+	border-radius: 10px;
+	overflow: hidden;
+
+	@media ($tablet) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		background-color: transparent;
+	}
+	@media (min-width: 1110px) {
+		justify-content: space-between;
+	}
+
+	.coast {
+		@media ($tablet) {
+			margin-bottom: 10px;
+			flex: 0 0 auto;
+		}
+	}
+}
+
+.tabwrap {
+	margin: 0 -15px;
+}
+.firstTable {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+
+	tr:nth-child(n) {
+		background-color: $bgTable;
+
+		&:first-child {
+			background-color: $mainColor;
+		}
+	}
+	&__trh {
+		th:first-child {
+			border-radius: 10px 0 0 0;
+		}
+		th:last-child {
+			border-radius: 0 10px 0 0;
+		}
+	}
+
+	th {
+		@include h4($align: center);
+		font-family: $mainFont;
+		font-weight: bold;
+	}
+	tr {
+		@include h4($align: center);
+		font-family: $mainFont;
+	}
+	tr > td:first-child {
+		@include h4($align: center);
+		font-family: $mainFont;
+		font-weight: bold;
+	}
+
+	@media ($tablet) {
+		display: none;
+	}
+}
+
+.table {
+	display: none;
+
+	@media ($tablet) {
+		display: table;
+		width: 100%;
+		border-collapse: collapse;
+		text-align: center;
+
+		// .table__trh
+		tr:nth-child(2n-1) {
+			background-color: $bgTable;
+
+			&:first-child {
+				background-color: $mainColor;
+			}
+		}
+
+		&__trh {
+			th:first-child {
+				border-radius: 10px 0 0 0;
+			}
+			th:last-child {
+				border-radius: 0 10px 0 0;
+			}
+		}
+		th {
+			@include h3($align: center);
+		}
+		tr {
+			@include h4($align: center);
+			font-family: $mainFont;
+		}
+		tr > td:first-child {
+			@include h3();
+
+			@media (min-width: 768px) and(max-width: 830px) {
+				font-size: 16px;
+			}
+		}
+	}
+}

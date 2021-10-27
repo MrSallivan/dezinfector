@@ -11,8 +11,13 @@ section {
 }
 .wrap_white {
 	@include wrap();
+
 	&-service{
 		background: url(../images/serv.png) center/cover no-repeat;
+
+		@media(min-width: 320px) and (max-width:768px){
+			background: none;
+		}
 	}
 }
 .caption {
