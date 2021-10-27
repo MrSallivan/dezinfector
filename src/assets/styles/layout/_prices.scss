@@ -16,7 +16,7 @@
 	// .prices__options
 	&__options {
 		margin-top: 10px;
-		@media($tablet){
+		@media ($tablet) {
 			margin-top: 35px;
 		}
 	}
@@ -25,7 +25,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		@media($tablet){
+		@media ($tablet) {
 			flex-direction: row;
 			justify-content: start;
 		}
@@ -42,13 +42,12 @@
 		// }
 		// }
 
-		
-		@media($tablet){
+		@media ($tablet) {
 			margin: 20px 30px 10px 0px;
 		}
 
 		&_conf {
-			@media($tablet){
+			@media ($tablet) {
 				margin: 20px 30px 10px 30px;
 			}
 		}

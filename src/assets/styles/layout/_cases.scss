@@ -1,0 +1,35 @@
+.cases {
+	// .cases__content
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 20px 0;
+
+		@media (min-width: 1280px) {
+			justify-content: flex-start;
+		}
+	}
+	&__content-case {
+		@media ($tablet) {
+			margin: 0 0 40px 0;
+		}
+		@media (min-width: 1280px) {
+			margin: 0 15px 40px 0;
+		}
+	}
+}
+.case {
+	// .case__top
+	&__top {
+	}
+	// .case__title
+	&__title {
+	}
+	// .case__bottom
+	&__bottom {
+	}
+	// .case__text
+	&__text {
+	}
+}
