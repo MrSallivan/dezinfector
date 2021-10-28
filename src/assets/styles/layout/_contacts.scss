@@ -1,9 +1,11 @@
 .contacts {
 	margin-bottom: 40px;
-
+	
 	@media ($desktop) {
+		position: relative;
 		margin-bottom: 80px;
 	}
+	
 	// .contacts__content
 	&__content {
 		// display: flex;
@@ -17,6 +19,7 @@
 	}
 	// .contacts__discription
 	&__discription {
+		
 	}
 	// .contacts__caption
 	&__caption {
@@ -65,7 +68,7 @@
 		}
 		@media ($desktop) {
 			position: absolute;
-			bottom: 0;
+			bottom: -50px;
 			left: 510px;
 			margin-top: 0;
 		}
