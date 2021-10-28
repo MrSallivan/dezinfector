@@ -38,6 +38,13 @@ section {
 		}
 	}
 }
+.mob_fon {
+	@include wrap();
+	@media (min-width: 320px) and (max-width: 767px) {
+		background: url(../images/mainpic.jpg) 140px 15px/100% auto no-repeat;
+	}
+}
+
 .caption {
 	@include h1();
 	padding: 0 15px;
