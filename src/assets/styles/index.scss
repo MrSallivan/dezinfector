@@ -12,18 +12,29 @@ section {
 .wrap_white {
 	@include wrap();
 
-	&-service{
+	&-service {
 		background: url(../images/serv.png) center/cover no-repeat;
 
-		@media(min-width: 320px) and (max-width:768px){
+		@media (min-width: 320px) and (max-width: 768px) {
 			background: none;
 		}
 	}
-	&-case{
+	&-case {
 		background: url(../images/case_pic.png) center/cover no-repeat;
+		position: relative;
 
-		@media(min-width: 320px) and (max-width:768px){
-			background: none;
+		&::before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			position: absolute;
+			background-color: rgba(245, 222, 11, 0.8);
+		}
+
+		@media (min-width: 320px) and (max-width: 768px) {
+			background: url(../images/fon_case.png) 0 0/100% auto no-repeat;
 		}
 	}
 }

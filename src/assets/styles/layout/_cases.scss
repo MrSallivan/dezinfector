@@ -1,4 +1,6 @@
 .cases {
+	position: relative;
+	z-index: 5;
 	// .cases__content
 	&__content {
 		display: flex;
