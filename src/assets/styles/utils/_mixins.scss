@@ -94,7 +94,7 @@
 @mixin linkreset() {
 	text-decoration: none;
 	font-family: $mainFont;
-	color: inherit;
+	// color: inherit;
 	font-size: inherit;
 }
 

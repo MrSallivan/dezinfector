@@ -19,5 +19,8 @@ h6 {
 }
 a {
 	font-size: 10px;
-	
+	color:#000;
+	&:hover{
+		color: $thirdColor;
+	}
 }

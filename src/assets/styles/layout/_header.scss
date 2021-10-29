@@ -341,7 +341,7 @@
 
 .new-select__list {
 	position: absolute;
-	top: 35px;//45
+	top: 35px; //45
 	left: 0;
 	/*     border: 1px solid #ced4da; */
 	cursor: pointer;
@@ -350,25 +350,30 @@
 	background: $mainColor;
 	user-select: none;
 	border-radius: 0 0 10px 10px;
-
-	@media(max-width:768px){
-		top:30px;
+	
+	@media (max-width: 768px) {
+		top: 30px;
 	}
+
 }
 
 .new-select__list.on {
 	display: block;
 	position: relative;
+	&:hover{
+		color: #000;
+	}
 }
 
 .new-select__item span {
 	display: block;
 	padding: 10px 15px;
+	color: #000;
 }
 
-.new-select__item span:hover {
-	color: $thirdColor;
-}
+// .new-select__item span:hover {
+// 	color: $thirdColor;
+// }
 
 .new-select:after {
 	content: "";
