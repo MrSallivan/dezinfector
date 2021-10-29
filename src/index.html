@@ -8,7 +8,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/styles/index.scss" />
-	
+
 </head>
 
 <body class="body">
@@ -45,8 +45,19 @@
 										src="./assets/images/icons/whatsapp.png" alt="icon_whatsapp"></a>
 							</div>
 						</div>
-						<div class="header-features">
+						<!-- <div class="header-features">
 							<a class="header-features__location">Комсомольск-на-Амуре</a>
+							<a class="header-features__tel" href="tel:+79243001117">+7 924 300-11-17</a>
+						</div> -->
+						<div class="header-features">
+							<a class="header-features__location">
+								<select class="select" name="language">
+									<option disabled value="">Комсомольск-на-Амуре</option>
+									<option value="kms">Комсомольск-на-Амуре</option>
+									<option value="hab">Хабаровск</option>
+									<option value="vl">Владивосток</option>
+								</select>
+							</a>
 							<a class="header-features__tel" href="tel:+79243001117">+7 924 300-11-17</a>
 						</div>
 					</nav>
@@ -84,7 +95,8 @@
 								</div>
 							</div>
 							<div class="advantages-btn">
-								<button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать обработку</button>
+								<button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать
+									обработку</button>
 							</div>
 						</div>
 						<div class="advantages__image advantages-image">
@@ -344,7 +356,8 @@
 								</div>
 								<div class="case__bottom">
 									<p class="case__text">
-										Используемые препараты сертифицированы и полностью безопасны для людей, животных и растений.
+										Используемые препараты сертифицированы и полностью безопасны для людей, животных и
+										растений.
 										В нашем арсенале химические
 										средства зарубежных и отечественных производителей. Все препараты прошли сертификацию и
 										разрешены к использованию на
@@ -358,7 +371,8 @@
 								</div>
 								<div class="case__bottom">
 									<p class="case__text">
-										Гарантируем полную конфиденциальность, если это необходимо заказчику. Появимся в гражданской
+										Гарантируем полную конфиденциальность, если это необходимо заказчику. Появимся в
+										гражданской
 										одежде на транспорте без
 										опознавательных знаков, оборудование и препараты пронесем в неприметной таре. Соседи не
 										узнают, что к Вам приезжали на
@@ -372,7 +386,8 @@
 								</div>
 								<div class="case__bottom">
 									<p class="case__text">
-										Работаем круглосуточно и без выходных. Обработаем в любое время суток, включая ночное, чтобы
+										Работаем круглосуточно и без выходных. Обработаем в любое время суток, включая ночное,
+										чтобы
 										не мешать производственному
 										процессу.
 									</p>
@@ -384,7 +399,8 @@
 								</div>
 								<div class="case__bottom">
 									<p class="case__text">
-										За проведение санитарных работ отвечают квалифицированные специалисты – старшие дезинфекторы
+										За проведение санитарных работ отвечают квалифицированные специалисты – старшие
+										дезинфекторы
 										2 разряда.
 									</p>
 								</div>
@@ -423,7 +439,8 @@
 					<section class="contacts">
 						<div class="contacts__content">
 							<div class="contacts__discription">
-								<div class="contacts__caption">Задайте интересующий Вас вопрос дезинфектору в WhatsApp и получите
+								<div class="contacts__caption">Задайте интересующий Вас вопрос дезинфектору в WhatsApp и
+									получите
 									бесплатную консультацию 24/7.</div>
 								<div class="contacts__texts">
 									<p>Напишите мне, и я проконсультирую по любым вопросам, касательно санитарных работ:</p>
@@ -431,7 +448,8 @@
 									<p>— проконсультирую по времени и стоимости обработки!</p>
 								</div>
 								<div class="contacts__btn">
-									<button class="btn btn_cont" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать обработку</button>
+									<button class="btn btn_cont" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать
+										обработку</button>
 								</div>
 								<div data-da=".contacts__discription,1023,2" class="contacts__position">
 									<p>Артем Безызвестных</p>
@@ -465,14 +483,15 @@
 					<form>
 						<div class="input-group input-group-lg">
 							<span class="input-group-text" id="inputGroup-sizing-lg">Ваше имя</span>
-							<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+							<input type="text" class="form-control" aria-label="Sizing example input"
+								aria-describedby="inputGroup-sizing-lg">
 						</div>
 						<div class="col-md-12">
 							<label for="validationCustomUsername" class="form-label"></label>
 							<div class="input-group has-validation input-group-lg">
 								<span class="input-group-text" id="inputGroupPrepend">Телефон</span>
-								<input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
-									required >
+								<input type="text" class="form-control" id="validationCustomUsername"
+									aria-describedby="inputGroupPrepend" required>
 								<div class="invalid-feedback">
 									Пожалуйста введите имя
 								</div>
@@ -480,7 +499,8 @@
 						</div>
 						<div class="mb-3">
 							<label for="exampleFormControlTextarea1" class="form-label"></label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Ваше сообщение"></textarea>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+								placeholder="Ваше сообщение"></textarea>
 						</div>
 						<button type="submit" class="btn btn-warning">Отправить</button>
 					</form>
@@ -493,7 +513,10 @@
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./assets/js/select.js"></script>
 	<script src="./assets/js/script.js"></script>
 	<script src="./assets/js/dynamicAdapt.js"></script>
 </body>
