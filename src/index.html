@@ -12,12 +12,15 @@
 </head>
 
 <body class="body">
+	<!-- [if lt IE 8]>
+		    <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
+		<![endif] -->
 	<main class="main">
 		<div class="wrap">
 			<div class="container">
 				<header class="header">
 					<div class="header__logo header-logo">
-						<a href="#" class="header-logo__link">
+						<a href="https://dezinfektor-dv.ru" class="header-logo__link">
 							<img class="header-logo__image  " src="./assets/images/logo.png" alt="logo_image" />
 						</a>
 						<p class="header-logo__text">Санитарная служба по борьбе с вредителями «Дезинфектор-ДВ»</p>
@@ -29,19 +32,19 @@
 						<div class="header-menu">
 							<div class="header-menu__items">
 								<div class="header-menu__item">
-									<a class="header-menu__link" href="#">Услуги</a>
+									<a class="header-menu__link" href="#service-link">Услуги</a>
 								</div>
 								<div class="header-menu__item">
-									<a class="header-menu__link" href="#">Кейсы</a>
+									<a class="header-menu__link" href="#case-link">Кейсы</a>
 								</div>
 								<div class="header-menu__item">
-									<a class="header-menu__link" href="#">Контакты</a>
+									<a class="header-menu__link" href="#contacts-link">Контакты</a>
 								</div>
 							</div>
 							<div class="header-menu__socials socials">
 								<a class="socials__link" href="#"><img class="socials__img"
 										src="./assets/images/icons/instagram.png" alt="icon_instagram"></a>
-								<a class="socials__link" href="#"><img class="socials__img"
+								<a class="socials__link" href="https://api.whatsapp.com/send/?phone=+79243001117&text=Здравствуйте%2C+у+меня+есть+вопрос"><img class="socials__img"
 										src="./assets/images/icons/whatsapp.png" alt="icon_whatsapp"></a>
 							</div>
 						</div>
@@ -110,7 +113,7 @@
 			</div>
 			<div class="wrap_white">
 				<div class="container">
-					<p class="caption">Услуги</p>
+					<p class="caption" id="service-link">Услуги</p>
 				</div>
 			</div>
 			<div class="wrap_white wrap_white-service">
@@ -333,7 +336,7 @@
 			</div>
 			<div class="wrap_white">
 				<div class="container">
-					<p class="caption">Кейсы</p>
+					<p class="caption" id="case-link">Кейсы</p>
 				</div>
 			</div>
 			<div class="wrap_white wrap_white-case">
@@ -434,7 +437,7 @@
 			</div>
 			<div class="wrap_white">
 				<div class="container">
-					<p class="caption">Контакты</p>
+					<p class="caption" id="contacts-link">Контакты</p>
 				</div>
 			</div>
 			<div class="write_white">
@@ -483,7 +486,13 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form>
+					<form method="POST" action="./assets/php/mail.php" class="form-zakaz">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Сайт dezinfektor-dv.ru">
+						<input type="hidden" name="admin_email" value="dezindv@gmail.com">
+						<input type="hidden" name="form_subject" value="Сообщение с формы заказа на сайте dezinfektor-dv.ru">
+						<input type="hidden" name="email_from" value="info@dezinfektor-dv.ru">
+						<!-- END Hidden Req-->
 						<div class="input-group input-group-lg">
 							<span class="input-group-text" id="inputGroup-sizing-lg">Ваше имя</span>
 							<input type="text" class="form-control" aria-label="Sizing example input"

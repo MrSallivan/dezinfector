@@ -36,12 +36,6 @@
 		font-family: $mainFont;
 		flex: 1 1 25;
 
-		// &:last-child{
-		// 	@media($tablet){
-		// 	margin: 20px 30px 10px 0px;
-		// }
-		// }
-
 		@media ($tablet) {
 			margin: 20px 30px 10px 0px;
 		}

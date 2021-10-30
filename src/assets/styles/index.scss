@@ -64,3 +64,21 @@ section {
 	max-width: 1310px;
 	margin: 0 auto;
 }
+.body.active {
+	overflow: hidden;
+}
+.thankyou {
+	text-align: center;
+	font-size: 18px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.thankyou h1 {
+	color: green;
+	font-size: 28px;
+}
+
+.thankyou p {
+	font-size: 18px;
+}

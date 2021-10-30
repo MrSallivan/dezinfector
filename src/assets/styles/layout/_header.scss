@@ -32,7 +32,6 @@
 		right: -100%;
 		width: 241px;
 		border-radius: 10px 0 0 10px;
-		// overflow: auto;
 		background-color: $mainColor;
 		transition: all 0.3s ease 0s;
 
@@ -60,9 +59,6 @@
 	justify-content: space-between;
 	align-items: center;
 
-	// @media ($tablet) {
-	// 	margin-right: 143px;
-	// }
 	@media (max-width: 1170px) and (min-width: 610.2px) {
 		margin-right: 20px;
 	}
@@ -76,9 +72,7 @@
 	@media (min-width: 1279.9px) {
 		margin-right: 143px;
 	}
-	// .header-logo__link
-	&__link {
-	}
+
 	// .header-logo__image
 	&__image {
 		display: inline-block;
@@ -116,7 +110,6 @@
 		}
 		@media (max-width: 840px) and (min-width: 768px) {
 			font-size: 16px;
-			// text-align: center;
 		}
 	}
 }
@@ -176,9 +169,6 @@
 			font-family: $mainFont;
 		}
 	}
-	// .header-menu__socials
-	&__socials {
-	}
 }
 
 .socials {
@@ -196,10 +186,6 @@
 		&:last-child {
 			margin-right: 0;
 		}
-	}
-
-	// .socials__img
-	&__img {
 	}
 }
 
@@ -230,14 +216,6 @@
 		cursor: pointer;
 		margin-bottom: 10px;
 
-		// &::before {
-		// 	content: url("../images/icons/arrow.png");
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 10px;
-		// 	max-height: 10px;
-		// 	margin-right: 5px;
-		// }
 		@media ($tablet) {
 			font-size: 18px;
 			font-family: $mainFont;
@@ -333,7 +311,6 @@
 .new-select {
 	display: inline-block;
 	position: relative;
-	/*     border: 1px solid #ced4da; */
 	padding: 0px 0px 0 32px; //10 15
 	cursor: pointer;
 	user-select: none;
@@ -343,24 +320,22 @@
 	position: absolute;
 	top: 35px; //45
 	left: 0;
-	/*     border: 1px solid #ced4da; */
 	cursor: pointer;
 	width: 100%;
 	z-index: 2;
 	background: $mainColor;
 	user-select: none;
 	border-radius: 0 0 10px 10px;
-	
+
 	@media (max-width: 768px) {
 		top: 30px;
 	}
-
 }
 
 .new-select__list.on {
 	display: block;
 	position: relative;
-	&:hover{
+	&:hover {
 		color: #000;
 	}
 }
@@ -371,10 +346,6 @@
 	color: #000;
 }
 
-// .new-select__item span:hover {
-// 	color: $thirdColor;
-// }
-
 .new-select:after {
 	content: "";
 	display: block;
@@ -384,7 +355,6 @@
 	left: 0;
 	top: calc(50% - 5px);
 	background: url("../images/icons/arrow.png") no-repeat center / contain;
-	//  opacity: 0.6;
 
 	-webkit-transition: all 0.27s ease-in-out;
 	-o-transition: all 0.27s ease-in-out;

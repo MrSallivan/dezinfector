@@ -1,6 +1,5 @@
 .sale {
 	width: 100%;
-	// max-width: 288px;
 	height: 37px;
 	background: $mainColor;
 	border-radius: 10px;
@@ -14,8 +13,6 @@
 	font-family: $mainFont;
 	font-weight: bold;
 	@media ($tablet) {
-		// display: inline;
-		// width: 172px;
 		font-size: 18px;
 		height: 42px;
 		flex: 0 0 172px;

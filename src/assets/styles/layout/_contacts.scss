@@ -8,19 +8,14 @@
 	
 	// .contacts__content
 	&__content {
-		// display: flex;
-		// flex-direction: column-reverse;
-
+		
 		@media ($desktop) {
 			display: flex;
 			flex-direction: row;
 			position: relative;
 		}
 	}
-	// .contacts__discription
-	&__discription {
-		
-	}
+	
 	// .contacts__caption
 	&__caption {
 		@include h2();
