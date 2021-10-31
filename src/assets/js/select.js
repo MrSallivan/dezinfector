@@ -52,3 +52,12 @@ $('.select').each(function () {
 		}
 	});
 });
+
+$(document).mouseup(function (e) {
+	var container = $(".header__menu.active");
+	if (container.has(e.target).length === 0) {
+		$('.header__menu.active').removeClass('active')
+		$('.header-burger').removeClass('active')
+		$('.body.active').removeClass('active')
+	}
+});
