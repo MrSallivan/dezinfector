@@ -10,9 +10,9 @@ burger.addEventListener('click', () => {
 		burger.classList.add('active')
 		header__menu.classList.add('active')
 		body.classList.add('active')
-
 	}
 })
+
 
 
 let select = document.querySelector('.new-select')
