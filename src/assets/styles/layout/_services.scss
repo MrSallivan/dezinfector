@@ -1,5 +1,9 @@
 .services {
 	
+	@media($desktop){
+		padding: 60px 0;
+	}
+
 	// .services__items
 	&__items {
 		display: flex;

@@ -8,6 +8,7 @@ html,
 body {
 	font-family: $mainFont;
 	font-size: 10px;
+	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 h1,
 h2,
