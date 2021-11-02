@@ -28,7 +28,7 @@ section {
 	&-case {
 		position: relative;
 		background: url(../images/fon_case_m.png) center/cover no-repeat;
-		
+
 		@media (min-width: 320px) and (max-width: 768px) {
 			background: url(../images/fon_case.png) 0 0/100% 100% no-repeat;
 		}
@@ -37,7 +37,7 @@ section {
 .mob_fon {
 	@include wrap();
 	@media (min-width: 320px) and (max-width: 767px) {
-		background: url(../images/mainpic.jpg) 140px 15px/100% auto no-repeat;
+		background: url(../images/mpf.png) 0 0/contain no-repeat;
 	}
 }
 

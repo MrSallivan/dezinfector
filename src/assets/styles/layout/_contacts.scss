@@ -32,7 +32,7 @@
 	&__texts {
 		@include h4();
 		font-family: $mainFont;
-		margin-top: 15px;
+		margin-top: 10px;
 		@media (min-width: 768px) and(max-width:1023px) {
 			text-align: center;
 		}
@@ -55,7 +55,7 @@
 	&__position {
 		@include h4();
 		font-family: $mainFont;
-		margin-top: 15px;
+		margin-top: 10px;
 
 		a {
 			@include linkreset();
@@ -92,7 +92,7 @@
 	}
 	// .contacts__purchases
 	&__purchases {
-		margin-top: 30px;
+		margin-top: 40px;
 
 		@media ($desktop) {
 			margin-top: 60px;
@@ -130,5 +130,9 @@
 	}
 }
 p#contacts-link{
-	margin-top: 80px;
+	margin: 40px 0 20px 0;
+	@media($desktop){
+		margin-top: 80px;
+		margin-bottom: 60px;
+	}
 }
