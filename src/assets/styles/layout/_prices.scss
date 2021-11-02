@@ -24,10 +24,17 @@
 	&__sales {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
+		margin-top: 20px;
+
 		@media ($tablet) {
 			flex-direction: row;
 			justify-content: start;
+			align-items: center;
+		}
+		@media ($desktop) {
+			align-items: center;
+			margin-top: 30px;
 		}
 	}
 	// .prices__sales-text
@@ -37,12 +44,12 @@
 		flex: 1 1 25;
 
 		@media ($tablet) {
-			margin: 20px 30px 10px 0px;
+			margin: 0px 30px 0px 0px;
 		}
 
 		&_conf {
 			@media ($tablet) {
-				margin: 20px 30px 10px 30px;
+				margin: 0px 30px 0px 30px;
 			}
 		}
 	}
@@ -73,8 +80,9 @@
 }
 
 .tabwrap {
-	margin: 0 -15px;
-	border-radius: 10px 10px 0 0;
+	margin: 0 -16px;
+
+	border-radius: 10px;
 	overflow: hidden;
 	&_two {
 		@media ($tablet) {
@@ -87,7 +95,6 @@
 .firstTable {
 	width: 100%;
 	border-collapse: collapse;
-	text-align: center;
 
 	tr:nth-child(n) {
 		background-color: $bgTable;
@@ -97,27 +104,74 @@
 		}
 	}
 	&__trh {
+		border-left: 16px solid $mainColor;
+
+		-moz-background-clip: border;
+		-webkit-background-clip: border;
+		background-clip: border-box;
+
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding;
+		background-clip: padding-box;
+
+		-moz-background-clip: content;
+		-webkit-background-clip: content;
+		background-clip: content-box;
+
 		th:first-child {
 			border-radius: 10px 0 0 0;
+
+			border-left: 16px solid $mainColor;
+
+			-moz-background-clip: border;
+			-webkit-background-clip: border;
+			background-clip: border-box;
+
+			-moz-background-clip: padding;
+			-webkit-background-clip: padding;
+			background-clip: padding-box;
+
+			-moz-background-clip: content;
+			-webkit-background-clip: content;
+			background-clip: content-box;
 		}
 		th:last-child {
 			border-radius: 0 10px 0 0;
 		}
+	}
+	td {
+		text-align: left;
 	}
 
 	th {
 		@include h4($align: center);
 		font-family: $mainFont;
 		font-weight: bold;
+		text-align: left;
 	}
 	tr {
 		@include h4($align: center);
 		font-family: $mainFont;
+
+		border-left: 16px solid $bgTable;
+
+		-moz-background-clip: border;
+		-webkit-background-clip: border;
+		background-clip: border-box;
+
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding;
+		background-clip: padding-box;
+
+		-moz-background-clip: content;
+		-webkit-background-clip: content;
+		background-clip: content-box;
 	}
 	tr > td:first-child {
 		@include h4($align: center);
 		font-family: $mainFont;
 		font-weight: bold;
+		text-align: left;
 	}
 
 	@media ($tablet) {
@@ -153,13 +207,15 @@
 		}
 		th {
 			@include h3($align: center);
+			font-family: $mainFont;
 		}
 		tr {
 			@include h4($align: center);
 			font-family: $mainFont;
 		}
 		tr > td:first-child {
-			@include h3();
+			@include h3($align: center);
+			font-family: $mainFont;
 
 			@media (min-width: 768px) and(max-width: 830px) {
 				font-size: 16px;

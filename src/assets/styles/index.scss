@@ -3,7 +3,14 @@
 @import "./layout";
 
 section {
-	padding: 0 15px;
+	
+	padding: 0 16px;
+	@media ($tablet) {
+		padding: 0 16px;
+	}
+	@media ($desktop) {
+		padding: 0 16px;
+	}
 }
 .wrap {
 	@include wrap();
@@ -63,6 +70,7 @@ section {
 	min-width: 320px;
 	max-width: 1310px;
 	margin: 0 auto;
+	padding: 0;
 }
 .body.active {
 	overflow: hidden;

@@ -17,4 +17,7 @@
 		height: 42px;
 		flex: 0 0 172px;
 	}
+	@media ($desktop) {
+		margin-bottom: 0;
+	}
 }

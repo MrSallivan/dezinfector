@@ -4,11 +4,15 @@
 	justify-content: center;
 	align-items: start;
 	list-style: none;
+	
 	&__item {
 		display: flex;
 		justify-content: start;
 		align-items: center;
 		margin-bottom: 10px;
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 	&__item-text {
 		@include p();
