@@ -1,7 +1,7 @@
 .services {
 	
 	@media($desktop){
-		// padding: 60px 15px;
+		padding: 60px 0;
 	}
 
 	// .services__items
@@ -19,7 +19,7 @@
 		}
 		@media ($desktop) {
 			flex-direction: row;
-			justify-content: flex-start;
+			justify-content: space-between;
 		}
 	}
 	// .services__item

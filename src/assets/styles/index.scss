@@ -4,13 +4,6 @@
 
 section {
 	max-width: 1278px;
-	// padding: 0 16px;
-	// @media ($tablet) {
-	// 	padding: 0 16px;
-	// }
-	// @media ($desktop) {
-	// 	padding: 0 16px;
-	// }
 }
 .wrap {
 	@include wrap();
@@ -38,7 +31,7 @@ section {
 .mob_fon {
 	@include wrap();
 	@media (min-width: 320px) and (max-width: 767px) {
-		background: url(../images/mpf.png) 0 0/contain no-repeat;
+		background: url(../images/mpf.png) 0 0 / contain no-repeat;
 	}
 }
 
@@ -53,6 +46,13 @@ section {
 	}
 	@media ($desktop) {
 		margin: 60px 0;
+	}
+}
+#service-link {
+	color: $secTextColor;
+
+	@media ($tablet) {
+	color: $textColor;
 	}
 }
 .container {
