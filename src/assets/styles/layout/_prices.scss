@@ -189,6 +189,7 @@
 		width: 100%;
 		border-collapse: collapse;
 		text-align: center;
+		
 
 		// .table__trh
 		tr:nth-child(2n-1) {
@@ -211,6 +212,9 @@
 			@include h3($align: center);
 			font-family: $mainFont;
 		}
+		td{
+			text-align: center;
+		}
 		tr {
 			@include h4($align: center);
 			font-family: $mainFont;
@@ -224,4 +228,12 @@
 			}
 		}
 	}
+}
+p.pl{
+	width: 100%;
+	display: inline-flex;
+	justify-content:stretch;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
 }
