@@ -31,6 +31,7 @@
 	// .contacts__texts
 	&__texts {
 		@include h4();
+		font-family: $mainFont;
 		margin-top: 15px;
 		@media (min-width: 768px) and(max-width:1023px) {
 			text-align: center;
@@ -53,6 +54,7 @@
 	// .contacts__position
 	&__position {
 		@include h4();
+		font-family: $mainFont;
 		margin-top: 15px;
 
 		a {
@@ -111,6 +113,8 @@
 	// .purchases__text
 	&__text {
 		@include h4();
+		font-family: $mainFont;
+		
 		margin-top: 10px;
 		@media (min-width: 768px) and(max-width:1023px) {
 			text-align: center;
@@ -124,4 +128,7 @@
 	@media (max-width: 1023.9px) and (min-width: 768px) {
 		width: 100%;
 	}
+}
+p#contacts-link{
+	margin-top: 80px;
 }
