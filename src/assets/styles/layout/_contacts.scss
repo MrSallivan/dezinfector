@@ -39,7 +39,7 @@
 		@media ($desktop) {
 			width: 491px;
 			margin-top: 30px;
-			margin-bottom: 15px;
+			margin-bottom: 0px;
 		}
 	}
 	// .contacts__btn
@@ -65,7 +65,7 @@
 		}
 		@media ($desktop) {
 			position: absolute;
-			bottom: -50px;
+			bottom: -25px;
 			left: 510px;
 			margin-top: 0;
 		}
