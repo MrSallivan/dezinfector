@@ -31,7 +31,7 @@ section {
 .mob_fon {
 	@include wrap();
 	@media (min-width: 320px) and (max-width: 767px) {
-		background: url(../images/mpf.png) 0 0 / contain no-repeat;
+		background: url(../images/mpf.png) 0 28px / contain no-repeat;
 	}
 }
 
