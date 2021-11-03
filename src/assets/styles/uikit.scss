@@ -43,4 +43,68 @@
 	}
 }
 
+.twotable {
+	@media ($tablet) {
+		display: flex;
+		flex-direction: column;
+		// .twotable__row
+		&__row {
+			flex: 1 1 20%;
+			display: flex;
+			justify-content: space-between;
+			// .twotable__row_1
+			&_1 {
+				border-radius: 15px 15px 0px 0px;
+				background-color: $mainColor;
+				@include h3();
+				font-family: $mainFont;
+				padding: 6.7px 0;
+			}
+			// .twotable__row_2
+			&_3 {
+				background-color: $bgTable;
+			}
+			&_5 {
+				background-color: $bgTable;
+			}
+			&_2 {
+				padding: 8px 0;
+			}
+			&_4 {
+				padding: 8px 0;
+			}
+			&_6 {
+				padding: 8px 0;
+			}
+		}
+		// .twotable__item
+		&__item {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
+			@include h4();
+			font-family: $mainFont;
+
+			// .twotable__item_ferst
+			&_ferst {
+				@include h3();
+				font-family: $mainFont;
+			}
+		}
+		.dop {
+			// margin: 0 auto;
+			text-align: left;
+			&_p {
+				width: 90px;
+			}
+			&_p1 {
+				width: 111px;
+			}
+		}
+		span {
+			color: transparent;
+		}
+	}
+}

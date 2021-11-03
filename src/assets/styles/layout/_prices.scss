@@ -17,7 +17,7 @@
 	&__options {
 		margin-top: 10px;
 		@media ($tablet) {
-			margin-top: 35px;
+			margin-top: 30px;
 		}
 	}
 
@@ -181,51 +181,70 @@
 	}
 }
 
-.table {
+
+.twotable {
 	display: none;
-
 	@media ($tablet) {
-		display: table;
-		width: 100%;
-		border-collapse: collapse;
-		text-align: center;
-		
-
-		// .table__trh
-		tr:nth-child(2n-1) {
-			background-color: $bgTable;
-
-			&:first-child {
+		display: flex;
+		flex-direction: column;
+		// .twotable__row
+		&__row {
+			flex: 1 1 20%;
+			display: flex;
+			justify-content: space-between;
+			// .twotable__row_1
+			&_1 {
+				border-radius: 15px 15px 0px 0px;
 				background-color: $mainColor;
+				@include h3();
+				font-family: $mainFont;
+				padding: 6.7px 0;
+			}
+			// .twotable__row_2
+			&_3 {
+				background-color: $bgTable;
+			}
+			&_5 {
+				background-color: $bgTable;
+			}
+			&_2 {
+				padding: 8px 0;
+			}
+			&_4 {
+				padding: 8px 0;
+			}
+			&_6 {
+				padding: 8px 0;
 			}
 		}
+		// .twotable__item
+		&__item {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-		&__trh {
-			th:first-child {
-				border-radius: 10px 0 0 0;
-			}
-			th:last-child {
-				border-radius: 0 10px 0 0;
-			}
-		}
-		th {
-			@include h3($align: center);
-			font-family: $mainFont;
-		}
-		td{
-			text-align: center;
-		}
-		tr {
-			@include h4($align: center);
-			font-family: $mainFont;
-		}
-		tr > td:first-child {
-			@include h3($align: center);
+			@include h4();
 			font-family: $mainFont;
 
-			@media (min-width: 768px) and(max-width: 830px) {
-				font-size: 16px;
+			// .twotable__item_ferst
+			&_ferst {
+				@include h3();
+				font-family: $mainFont;
 			}
+		}
+		.dop {
+			// margin: 0 auto;
+			text-align: left;
+			&_p {
+				width: 90px;
+			}
+			&_p1 {
+				width: 111px;
+			}
+		}
+		span {
+			color: transparent;
 		}
 	}
 }
