@@ -48,7 +48,7 @@
 
 	@media($tablet) {
 		display: flex;
-		flex-direction: row;
+		flex-direction:row;
 		max-width: 1278px;
 		// .twotable__col
 		&__col {
@@ -77,12 +77,10 @@
 		&__item {
 			// .twotable__item_ferst
 			&_ferst {
-				width: 100%;
-				text-align: center;
-				background: $mainColor;
+				
 			}
 			&_hide{
-				color: transparent;
+				
 			}
 		}
 	}
