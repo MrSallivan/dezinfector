@@ -52,7 +52,7 @@ section {
 	color: $secTextColor;
 
 	@media ($tablet) {
-	color: $textColor;
+		color: $textColor;
 	}
 }
 
@@ -80,4 +80,15 @@ section {
 
 .thankyou p {
 	font-size: 18px;
+}
+.rub {
+	font-family: Magistral;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21.6px;
+	font-feature-settings: "pnum" on, "lnum" on;
+	// 	line-height: 5px;
+	// 	width: 0.4em;
+	// 	border-bottom: 1px solid #000;
+	// 	display: inline-block;
 }
