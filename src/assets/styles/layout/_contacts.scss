@@ -31,14 +31,15 @@
 	// .contacts__texts
 	&__texts {
 		@include h4();
-		margin-top: 15px;
+		font-family: $mainFont;
+		margin-top: 10px;
 		@media (min-width: 768px) and(max-width:1023px) {
 			text-align: center;
 		}
 		@media ($desktop) {
 			width: 491px;
 			margin-top: 30px;
-			margin-bottom: 15px;
+			margin-bottom: 0px;
 		}
 	}
 	// .contacts__btn
@@ -53,7 +54,8 @@
 	// .contacts__position
 	&__position {
 		@include h4();
-		margin-top: 15px;
+		font-family: $mainFont;
+		margin-top: 10px;
 
 		a {
 			@include linkreset();
@@ -63,7 +65,7 @@
 		}
 		@media ($desktop) {
 			position: absolute;
-			bottom: -50px;
+			bottom: -25px;
 			left: 510px;
 			margin-top: 0;
 		}
@@ -90,7 +92,7 @@
 	}
 	// .contacts__purchases
 	&__purchases {
-		margin-top: 30px;
+		margin-top: 40px;
 
 		@media ($desktop) {
 			margin-top: 60px;
@@ -111,6 +113,8 @@
 	// .purchases__text
 	&__text {
 		@include h4();
+		font-family: $mainFont;
+		
 		margin-top: 10px;
 		@media (min-width: 768px) and(max-width:1023px) {
 			text-align: center;
@@ -123,5 +127,12 @@
 .btn_cont {
 	@media (max-width: 1023.9px) and (min-width: 768px) {
 		width: 100%;
+	}
+}
+p#contacts-link{
+	margin: 40px 0 20px 0;
+	@media($desktop){
+		margin-top: 80px;
+		margin-bottom: 60px;
 	}
 }

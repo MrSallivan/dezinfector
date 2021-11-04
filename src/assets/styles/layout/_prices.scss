@@ -17,17 +17,24 @@
 	&__options {
 		margin-top: 10px;
 		@media ($tablet) {
-			margin-top: 35px;
+			margin-top: 30px;
 		}
 	}
 
 	&__sales {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
+		margin-top: 20px;
+
 		@media ($tablet) {
 			flex-direction: row;
 			justify-content: start;
+			align-items: center;
+		}
+		@media ($desktop) {
+			align-items: center;
+			margin-top: 30px;
 		}
 	}
 	// .prices__sales-text
@@ -35,14 +42,16 @@
 		@include h4($align: left);
 		font-family: $mainFont;
 		flex: 1 1 25;
+		// margin-top: 20px;
 
 		@media ($tablet) {
-			margin: 20px 30px 10px 0px;
+			margin: 0px 30px 0px 0px;
 		}
 
 		&_conf {
+			margin-top: 20px;
 			@media ($tablet) {
-				margin: 20px 30px 10px 30px;
+				margin: 0px 30px 0px 30px;
 			}
 		}
 	}
@@ -73,8 +82,9 @@
 }
 
 .tabwrap {
-	margin: 0 -15px;
-	border-radius: 10px 10px 0 0;
+	margin: 0 -16px;
+
+	border-radius: 10px;
 	overflow: hidden;
 	&_two {
 		@media ($tablet) {
@@ -84,86 +94,174 @@
 	}
 }
 
-.firstTable {
-	width: 100%;
-	border-collapse: collapse;
-	text-align: center;
+.onetable {
+	display: flex;
+	flex-direction: column;
+	// .onetable__row
+	&__row {
+		flex: 1 1 33.33%;
+		display: flex;
+		justify-content: space-between;
 
-	tr:nth-child(n) {
-		background-color: $bgTable;
-
-		&:first-child {
+		// .onetable__row_1
+		&_1 {
+			border-radius: 10px 10px 0px 0px;
 			background-color: $mainColor;
 		}
-	}
-	&__trh {
-		th:first-child {
-			border-radius: 10px 0 0 0;
+		// .onetable__row_2
+		&_2 {
+			background-color: $bgTable;
+			padding: 10px 0 5px 0;
 		}
-		th:last-child {
-			border-radius: 0 10px 0 0;
+		// .onetable__row_3
+		&_3 {
+			background-color: $bgTable;
+			padding: 5px 0;
+		}
+		// .onetable__row_4
+		&_4 {
+			background-color: $bgTable;
+			padding: 5px 0;
+		}
+		// .onetable__row_5
+		&_5 {
+			background-color: $bgTable;
+			padding: 5px 0;
+		}
+		// .onetable__row_6
+		&_6 {
+			background-color: $bgTable;
+			padding: 5px 0 10px 0;
+		}
+	}
+	// .onetable__item
+	&__item {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+
+		@include h4();
+		font-family: $mainFont;
+		line-height: 16.8px;
+
+		// .onetable__item_ferst
+		&_ferst {
+			@include h4();
+			font-family: $mainFont;
+			line-height: 16.8px;
+			font-weight: 700;
 		}
 	}
 
-	th {
-		@include h4($align: center);
-		font-family: $mainFont;
-		font-weight: bold;
-	}
-	tr {
-		@include h4($align: center);
-		font-family: $mainFont;
-	}
-	tr > td:first-child {
-		@include h4($align: center);
-		font-family: $mainFont;
-		font-weight: bold;
+	span.invise {
+		color: transparent;
 	}
 
 	@media ($tablet) {
 		display: none;
 	}
-}
 
-.table {
-	display: none;
-
-	@media ($tablet) {
-		display: table;
-		width: 100%;
-		border-collapse: collapse;
-		text-align: center;
-
-		// .table__trh
-		tr:nth-child(2n-1) {
-			background-color: $bgTable;
-
-			&:first-child {
-				background-color: $mainColor;
-			}
+	.dop {
+		text-align: left;
+		// .dop_p1
+		&_p1 {
+			width: 80px;
 		}
-
-		&__trh {
-			th:first-child {
-				border-radius: 10px 0 0 0;
-			}
-			th:last-child {
-				border-radius: 0 10px 0 0;
-			}
-		}
-		th {
-			@include h3($align: center);
-		}
-		tr {
-			@include h4($align: center);
-			font-family: $mainFont;
-		}
-		tr > td:first-child {
-			@include h3();
-
-			@media (min-width: 768px) and(max-width: 830px) {
-				font-size: 16px;
-			}
+		// .dop_p
+		&_p {
+			width: 96px;
 		}
 	}
+	.s1 {
+		display: block;
+		margin: 10px 0 0 0;
+	}
+	.s2 {
+		display: block;
+		margin: 5px 0 5px 0;
+	}
+	.s3 {
+		display: block;
+		margin: 5px 0 10px 0;
+	}
+	.s4 {
+		display: block;
+		margin: 10px 0 0 0;
+	}
+}
+
+.twotable {
+	display: none;
+	@media ($tablet) {
+		display: flex;
+		flex-direction: column;
+		// .twotable__row
+		&__row {
+			flex: 1 1 20%;
+			display: flex;
+			justify-content: space-between;
+			// .twotable__row_1
+			&_1 {
+				border-radius: 15px 15px 0px 0px;
+				background-color: $mainColor;
+				@include h3();
+				font-family: $mainFont;
+				padding: 6.7px 0;
+			}
+			// .twotable__row_2
+			&_3 {
+				background-color: $bgTable;
+			}
+			&_5 {
+				background-color: $bgTable;
+			}
+			&_2 {
+				padding: 8px 0;
+			}
+			&_4 {
+				padding: 8px 0;
+			}
+			&_6 {
+				padding: 8px 0;
+			}
+		}
+		// .twotable__item
+		&__item {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include h4();
+			font-family: $mainFont;
+
+			// .twotable__item_ferst
+			&_ferst {
+				@include h3();
+				font-family: $mainFont;
+			}
+		}
+		.dop {
+			// margin: 0 auto;
+			text-align: left;
+			&_p {
+				width: 90px;
+			}
+			&_p1 {
+				width: 111px;
+			}
+		}
+		span {
+			color: transparent;
+		}
+	}
+}
+p.pl {
+	width: 100%;
+	display: inline-flex;
+	justify-content: stretch;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
 }
