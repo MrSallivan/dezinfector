@@ -1,24 +1,25 @@
 {
-    "name": "wwwtemplate",
-    "version": "1.0.0",
-    "description": "Стартовый проект для сборки и разработки веб-макетов и UI Kit к ним.",
-    "scripts": {
-        "dev": "parcel src/index.html --open",
-        "kit": "parcel src/uikit.html --open",
-        "thk": "parcel src/thankyou.html --open",
-        "build:uikit": "rm -rf build/uikit && parcel build src/uikit.html --out-dir build/uikit",
-        "build": "parcel build src/index.html && parcel build src/thankyou.html --out-dir build/www"
-    },
-    "author": "Mikhail Nepomnyashchiy",
-    "license": "ISC",
-    "dependencies": {
-        "autoprefixer": "^9.8.0",
-        "parcel-bundler": "^1.12.4",
-        "postcss-modules": "^2.0.0",
-        "sass": "^1.26.5"
-    },
-    "browserslist": [
-        "last 5 version",
-        "ie 10"
-    ]
+  "name": "wwwtemplate",
+  "version": "1.0.0",
+  "description": "Стартовый проект для сборки и разработки веб-макетов и UI Kit к ним.",
+  "main": "https://mrsullivan.pro/projects/dezinfector/index.html",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "kit": "parcel src/uikit.html --open",
+    "thk": "parcel src/thankyou.html --open",
+    "build:uikit": "rm -rf build/uikit && parcel build src/uikit.html --out-dir build/uikit",
+    "build": "parcel build src/index.html && parcel build src/thankyou.html --out-dir build/www --public-url ."
+  },
+  "author": "Mikhail Nepomnyashchiy",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^2.0.0",
+    "sass": "^1.26.5"
+  },
+  "browserslist": [
+    "last 5 version",
+    "ie 10"
+  ]
 }
