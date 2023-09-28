@@ -21,7 +21,7 @@
 		@include h2();
 		margin-bottom: 15px;
 
-		@media (min-width: 768px) and(max-width:1023px) {
+		@media (min-width: 768px) and (max-width:1023px) {
 			text-align: center;
 		}
 		@media ($desktop) {
@@ -33,7 +33,7 @@
 		@include h4();
 		font-family: $mainFont;
 		margin-top: 10px;
-		@media (min-width: 768px) and(max-width:1023px) {
+		@media (min-width: 768px) and (max-width:1023px) {
 			text-align: center;
 		}
 		@media ($desktop) {
@@ -60,7 +60,7 @@
 		a {
 			@include linkreset();
 		}
-		@media (min-width: 768px) and(max-width:1023px) {
+		@media (min-width: 768px) and (max-width:1023px) {
 			text-align: center;
 		}
 		@media ($desktop) {
@@ -80,7 +80,7 @@
 		img {
 			width: 100%;
 			object-fit: cover;
-			@media (min-width: 768px) and(max-width:1023px) {
+			@media (min-width: 768px) and (max-width:1023px) {
 				width: 65%;
 				margin: 0 auto;
 				display: block;
@@ -106,7 +106,7 @@
 	// .purchases__caption
 	&__caption {
 		@include h2();
-		@media (min-width: 768px) and(max-width:1023px) {
+		@media (min-width: 768px) and (max-width:1023px) {
 			text-align: center;
 		}
 	}
@@ -116,7 +116,7 @@
 		font-family: $mainFont;
 		
 		margin-top: 10px;
-		@media (min-width: 768px) and(max-width:1023px) {
+		@media (min-width: 768px) and (max-width:1023px) {
 			text-align: center;
 		}
 		@media ($desktop) {
